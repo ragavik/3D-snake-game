@@ -2,7 +2,31 @@
 <html>
     <head>
         <title>3D Snake Game</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.sound.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="snake.js"></script>
     </head>
     <body>
+        <div id="header">
+            <span id="title">3D Snake Game</span>
+        </div>
+        <div id="options">
+            <div id="score-board">
+                Score: <span id="score">0</span>
+            </div>
+            <div class="options-header">Gameplay Options</div>
+            <div class="sub-options">
+                Level: <button id="slow">Beginner</button> <button id="fast">Advanced</button>
+            </div>
+            <div class="sub-options">
+                Mode: <button id="snow">Christmas</button> <button id="no-snow">Regular</button>
+            </div>
+            <div class="sub-options">
+                Music: <button id="music-off">Off</button> <button id="music-on">On</button>
+            </div>
+        </div>  
     </body>
 </html>
